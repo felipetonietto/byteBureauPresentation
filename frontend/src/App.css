@@ -1,0 +1,209 @@
+.hero {
+  position: relative;
+  padding: 96px 30px 138px;
+  background: url(https://bitcoin.org/img/hero/hero-bg.svg?1528322191) bottom
+    no-repeat;
+  background-size: cover;
+  z-index: 10;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer,
+.push {
+  height: 50px;
+}
+
+.bd {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -15px 0;
+  border: solid #f7f7f9;
+  max-inline-size: 90vw;
+}
+
+.texts {
+  justify-content: space-evenly;
+}
+
+.photo {
+  object-fit: cover;
+  max-width: 800px;
+  position: relative;
+}
+
+.machine {
+  max-width: 600px;
+  position: relative;
+}
+
+.bitcoin {
+  max-width: 2vw;
+  position: relative;
+}
+
+.converter {
+  max-width: 10rem;
+  max-height: 10rem;
+  font-size: 0.9rem;
+  border-radius: 1rem;
+  border-width: 0.2rem;
+}
+
+.converterTittle {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.converterSubTitle {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 0.02rem;
+  padding-left: 0.2rem;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(./fontes/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "source sans";
+  src: url(./fontes/SourceSansPro-SemiBold.ttf);
+}
+
+.static-panel {
+  display: flex;
+  justify-content: center;
+  max-width: 0vw;
+  max-height: auto;
+  padding-left: 45vw;
+}
+
+.panel {
+  border: 1px solid #d8d8d8;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  padding: 14px 32px 14px 20px;
+  -webkit-box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.07);
+}
+
+.panel__info {
+  display: flex;
+  align-items: baseline;
+}
+
+.panel__info + .panel__info::before {
+  content: "";
+  width: 1px;
+  height: 66%;
+  background-color: #c5c5c557;
+  margin: 0 17px;
+}
+
+.info__number {
+  font-size: 24px;
+  font-family: "roboto";
+  color: var(--color-number);
+}
+
+.info__label {
+  font-size: 18px;
+  font-family: "source sans";
+  margin-left: 3px;
+  color: var(--color-label);
+}
+
+.panel-sticky {
+  position: fixed;
+  right: 20px;
+  bottom: 85px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  padding: 6px 7px 6px 16px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  background-color: #fff;
+  z-index: 11;
+
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.09);
+}
+.panel-sticky__info {
+  display: block;
+}
+
+.panel-sticky__info + .panel-sticky__info::before {
+  content: "";
+  display: block;
+  width: 96%;
+  height: 1px;
+  background-color: #c5c5c557;
+}
+
+.info__number.small {
+  font-size: 22px;
+}
+
+.info__label.small {
+  font-size: 13px;
+}
+
+body {
+  --color-number: #4d4d4e;
+  --color-label: #4c4c4c;
+}
+
+.bitcoin-icon {
+  color: #f2a900;
+  font-size: 30px;
+  /* src: url(https://kit.fontawesome.com/1606103f36.js); */
+}
+
+.bitcoin-icon.large {
+  font-size: 36px;
+  /* src: url(https://kit.fontawesome.com/1606103f36.js); */
+}
+
+@media only screen and (max-width: 550px) {
+  .panel-sticky {
+    display: flex;
+  }
+
+  .static-panel {
+    display: flex;
+    padding-left: 42vw;
+  }
+}
+
+.fab {
+  margin-right: 12px;
+}
+
+.interdiv {
+  display: flex;
+}
+
+.read-more-link {
+  text-decoration: dashed;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-size: 0rem;
+  background-color: aliceblue;
+  border-radius: 0.3rem;
+}
+
+.h7 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
